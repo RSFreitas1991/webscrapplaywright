@@ -1,0 +1,27 @@
+{
+  "name": "webscrapplaywright",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RSFreitas1991/webscrapplaywright.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RSFreitas1991/webscrapplaywright/issues"
+  },
+  "homepage": "https://github.com/RSFreitas1991/webscrapplaywright#readme",
+  "dependencies": {
+    "dotenv": "10.0.0",
+    "express": "4.17.1",
+    "express-async-errors": "3.1.1",
+    "nodemon": "^2.0.20",
+    "playwright": "^1.29.2",
+    "swagger-ui-express": "^4.6.0"
+  }
+}
