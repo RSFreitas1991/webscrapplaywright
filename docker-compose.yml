@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  node:
+    container_name: app_webscrap
+    build: .
+    ports:
+      - 3000:3000
+    platform: linux/x86_64
+    working_dir: /app-backend
+    healthcheck:
+      test: ["CMD", "lsof", "-t", "-i:3001"] # Caso utilize outra porta interna para o back, altere ela aqui também
+      timeout: 10s
+      retries: 5

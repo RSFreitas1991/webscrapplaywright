@@ -14,9 +14,9 @@ const webScrap = {
               data.push({ name, price });
             }
         });
-        return data;
+        const sortByKey = (key) => (a, b) => b[key] - a[key];
+        return data.sort(sortByKey('price'));
     });
-    console.log(books);
     await browser.close();
     return books;
 },
